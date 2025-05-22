@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("CardLogger")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+831d7ec37f380e84b5ee8255e1898c1432fef9ed")]
 [assembly: System.Reflection.AssemblyProductAttribute("CardLogger")]
 [assembly: System.Reflection.AssemblyTitleAttribute("CardLogger")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

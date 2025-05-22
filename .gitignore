@@ -1,0 +1,27 @@
+## Ignore Visual Studio files
+.vs/
+*.suo
+*.user
+*.log
+*.pdb
+*.dll
+
+## Ignore build results
+[Bb]in/
+[Oo]bj/
+
+## Ignore NuGet packages
+[Pp]ackages/
+
+## Ignore generated files
+*.GeneratedMSBuildEditorConfig.editorconfig
+*.designer.cs
+*.g.cs
+*.g.i.cs
+
+## Ignore temporary files
+*~
+.#*
+
+## Ignore Rider files
+.idea/ 
