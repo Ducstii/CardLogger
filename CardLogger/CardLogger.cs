@@ -179,6 +179,13 @@ namespace CardLogger
                     return false;
                 }
 
+                // Only allow roles specified in the config
+                if (!CardLogger.Singleton.Config.AllowedLogRoles.Contains(player.Role.Type.ToString()))
+                {
+                    response = "You do not have permission to use this command.";
+                    return false;
+                }
+
                 ushort serial = keycard.Serial;
                 if (!CardLogger.Singleton.keycardLogs.ContainsKey(serial) || CardLogger.Singleton.keycardLogs[serial].Count == 0)
                 {
@@ -227,5 +234,15 @@ namespace CardLogger
     {
         public bool IsEnabled { get; set; } = true;
         public bool Debug { get; set; } = false;
+
+        // New configuration option for allowed roles for the .logs command
+        public List<string> AllowedLogRoles { get; set; } = new List<string>
+        {
+            "FacilityGuard",
+            "NtfPrivate",
+            "NtfSergeant",
+            "NtfSpecialist",
+            "NtfCommander"
+        };
     }
 } 
