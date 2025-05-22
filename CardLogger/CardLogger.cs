@@ -116,10 +116,13 @@ namespace CardLogger
                 doorName = GetDoorAlias(doorName);
                 string time = GetInGameTime();
                 string log;
+                
+                string action = ev.Door.IsOpen ? "closed" : "opened";
+
                 if (!ev.IsAllowed)
-                    log = $"<color=red>[{time}] {doorName} attempted to open by {ev.Player.Nickname}</color>";
+                    log = $"<color=red>[{time}] {doorName} attempted to be {action} by {ev.Player.Nickname}</color>";
                 else
-                    log = $"[{time}] {doorName} accessed by {ev.Player.Nickname}";
+                    log = $"[{time}] {doorName} {action} by {ev.Player.Nickname}";
                 if (!keycardLogs.ContainsKey(serial))
                     keycardLogs[serial] = new List<string>();
                 keycardLogs[serial].Add(log);
