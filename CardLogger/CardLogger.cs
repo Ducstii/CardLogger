@@ -242,7 +242,8 @@ namespace CardLogger
             "NtfPrivate",
             "NtfSergeant",
             "NtfSpecialist",
-            "NtfCommander"
+            "NtfCaptain",
+            "Tutorial"
         };
     }
 } 

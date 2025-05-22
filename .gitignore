@@ -5,7 +5,6 @@
 *.log
 *.pdb
 *.dll
-
 ## Ignore build results
 [Bb]in/
 [Oo]bj/
