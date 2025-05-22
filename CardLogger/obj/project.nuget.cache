@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "hR/D6WtaRyM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Elliott\\source\\repos\\CardLogger\\CardLogger\\CardLogger.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Elliott\\.nuget\\packages\\exiled\\8.9.11\\exiled.8.9.11.nupkg.sha512",
+    "C:\\Users\\Elliott\\.nuget\\packages\\exmod.exiled\\9.6.0\\exmod.exiled.9.6.0.nupkg.sha512"
+  ],
+  "logs": []
+}
