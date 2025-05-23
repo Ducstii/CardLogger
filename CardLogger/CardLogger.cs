@@ -134,7 +134,7 @@ namespace CardLogger
             if (ev.Player.CurrentItem is Keycard keycard)
             {
                 ushort serial = keycard.Serial;
-                string lockerName = "SCP Cabinet"; // Can't get the real name in your version
+                string lockerName = "SCP Cabinet"; 
                 string time = GetInGameTime();
                 string log;
                 if (!ev.IsAllowed)
